@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Valentina, pasala muy bien :D</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .message {
+            font-size: 2rem;
+            color: #ff69b4;
+            margin-bottom: 20px;
+        }
+
+        .flowers {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .flower {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            background-color: #ff69b4;
+            border-radius: 50%;
+            position: relative;
+            animation: float 3s infinite ease-in-out;
+        }
+
+        .flower::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            width: 30px;
+            height: 30px;
+            background-color: #ff69b4;
+            border-radius: 50%;
+        }
+
+        .flower::after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: -10px;
+            width: 30px;
+            height: 30px;
+            background-color: #ff69b4;
+            border-radius: 50%;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="message">Feliz Cumpleaños Valentina</div>
+        <div class="flowers">
+            <div class="flower" style="background-color: #ff69b4;"></div>
+            <div class="flower" style="background-color: #ff4500;"></div>
+            <div class="flower" style="background-color: #ffd700;"></div>
+            <div class="flower" style="background-color: #32cd32;"></div>
+            <div class="flower" style="background-color: #1e90ff;"></div>
+            <div class="flower" style="background-color: #8a2be2;"></div>
+        </div>
+    </div>
+</body>
+</html>
